@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Sprites</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h3 class="app">forecast</h3>
+            <h2 class="plan-text">Planning to go somewhere? See the weather forecast first <i class="fa-solid fa-cloud"></i></h2>
+            <div class="main-info">
+                <h1 class="temperature"></h1>
+                <div class="city-date">
+                    <h2 class="city"></h2>
+                    <p class="date"></p>
+                </div>
+                <div class="weather-img">
+                    <img alt="" class="condition">
+                    <p class="weather"></p>
+                </div>
+            </div>
+        </div>
+        <div class="secondary">
+            <form action="" class="search">
+                <input type="search" name="q" id="" class="search-bar" placeholder="Search Location">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <table class="all-info">
+                <caption>Weather Details</caption>
+                <tr>
+                    <td>Sunrise</td>
+                    <td id="sunrise"></td>
+                </tr>
+                <tr>
+                    <td>Sunset</td>
+                    <td id="sunset"></td>
+                </tr>
+                <tr>
+                    <td>Maximum temperature</td>
+                    <td id="maxt"></td>
+                </tr>
+                <tr>
+                    <td>Maximum temperature</td>
+                    <td id="mint"></td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+    <h2 class="today-head">Today's Weather</h2>
+    <table class="daily-info">
+
+        <tr>
+            <th>Time</th>
+            <th>Temperature</th>
+            <th>Condition</th>
+            <th>Image</th>
+        </tr>
+
+
+    </table>
+    <script src="https://kit.fontawesome.com/86098cddac.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
